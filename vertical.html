@@ -118,19 +118,11 @@
   }
 }
 
-@media screen and (min-width: 440px) and (max-width: 660px) {
+@media screen and (min-width: 0px) and (max-width: 800px) {
   .royalSlider.heroSlider,
   .royalSlider.heroSlider .rsOverflow {
-    height: 450px !important;
+    height: 600px !important;
   }
-}
-
-@media screen and (min-width: 0px) and (max-width: 440px) {
-  .royalSlider.heroSlider,
-  .royalSlider.heroSlider .rsOverflow {
-    height: 350px !important;
-  }
-}
   
   .infoBlock {
     padding: 10px;
@@ -155,13 +147,15 @@
   <!-- MAIN CONTAINER for Fullscreen page -->
   <div class="flex flex-wrap h-screen min-h-full">
     <!-- MENU CONTAINER -->
-    <div class="w-full bg-gray-300 w-full lg:w-1/3 md:h-screen md:min-h-full">
+    <div class="w-full bg-gray-300 md:w-2/5 md:h-screen md:min-h-full">
       <header class="h-full">  
         <div class="flex flex-col justify-around h-full"> 
           <!-- Main Header Card -->
           <div class="w-80 px-4 py-8 mt-4">
-            <section class="mb-4" style="min-width: 33%; max-width: 160px;">
-              <img src="img/favicon.svg" href="#">
+            <section class="mb-4" style="width: 80%; max-width: 80px;">
+              <svg viewBox="0 0 102 102">
+                <circle cx="51" cy="51" r="50" fill="powderblue" stroke="#333">
+              </svg>
             </section>
             <h1 class="w-full mb-4" href="#">Jordan Pavey Photography</h1>
             <p class="text-xs font-normal">Hi 👋🏼, I'm a Gold Coast based photographer taking snacks for your eyes across the country.</p>
@@ -215,7 +209,7 @@
               <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-indigo-700 bg-gray-200 border border-transparent rounded-md hover:bg-indigo-200">Works</a>
             </div>
           </div>
-          <!-- Footer Links of Left Menu Card -->
+          <!-- Footer Card -->
           <div class="content-end px-4 py-8">
             <nav class="flex flex-col flex-wrap">
               <a href="#" class="inline-block px-5 py-3 mb-2 text-xs text-black bg-gray-200 rounded-md hover:bg-indigo-200">Blog</a>
@@ -226,118 +220,31 @@
         </div>
       </header>
     </div>
-    <!-- RIGHT CONTENT CONTAINER -->
-    <div class="flex flex-col justify-around bg-gray-100 w-full lg:w-2/3 md:h-screen md:min-h-full">
+    <!-- Content Container Area -->
+    <div class="flex flex-col justify-around items-center w-full bg-gray-100 md:w-3/5 md:h-screen md:min-h-full">
       <!-- slider code start - container -->
-  <div class="clearfix sliderContainer fullWidth">
-    <div id="full-width-slider" class="royalSlider heroSlider rsMinW">
-      <!-- slider content start - add more image slides below -->
-      <div class="rsContent">
-        <img class="rsImg" src="img/landscape/1.jpg" alt="" />
-        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="right" data-speed="200">
-          <h4 class="eventName">Shark Bar w/ Peach Fur</h4>
-          <p class="eventDesc">Shot on Sony AX7II w/ fisheye lens.</p>
+      <div id="simple-vertical" class="royalSlider rsDefault">
+        <a class="rsImg" href="http://b.vimeocdn.com/ts/284/709/284709146_640.jpg"></a>
+        <a class="rsImg" data-rsVideo="https://vimeo.com/44388232" href="http://b.vimeocdn.com/ts/308/375/308375094_640.jpg"></a>
+        <div>
+           <a class="rsImg" href="img/video/02.jpg"></a>
+           <div class="rsABlock blockSample">Animated Block Sample</div>
         </div>
+        <a class="rsImg" data-rsVideo="https://vimeo.com/45830194" href="http://b.vimeocdn.com/ts/319/715/319715493_640.jpg"></a>
+        <a class="rsImg" data-rsVideo="https://vimeo.com/31240369" href="http://b.vimeocdn.com/ts/210/393/210393954_640.jpg"></a>
       </div>
-      <div class="rsContent">
-        <img class="rsImg" src="img/landscape/2.jpg" alt="" />
-        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="right" data-speed="200">
-          <h4 class="eventName">Let Them Eat Cake - Main Stage</h4>
-          <p class="eventDesc">Shot on Sony AX7II w/ 60mm lens.</p>
-        </div>
-      </div>
-      <div class="rsContent">
-        <img class="rsImg" src="img/landscape/3.jpg" alt="" />
-        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="right" data-speed="200">
-          <h4 class="eventName">Shark Bar w/ Peach Fur</h4>
-          <p class="eventDesc">Shot on Sony AX7II w/ fisheye lens.</p>
-        </div>
-      </div>
-      <div class="rsContent">
-        <img class="rsImg" src="img/landscape/4.jpg" alt="" />
-        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="right" data-speed="200">
-          <h4 class="eventName">Shark Bar w/ Peach Fur</h4>
-          <p class="eventDesc">Shot on Sony AX7II w/ fisheye lens.</p>
-        </div>
-      </div>
-      <div class="rsContent">
-        <img class="rsImg" src="img/landscape/5.jpg" alt="" />
-        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="right" data-speed="200">
-          <h4 class="eventName">Unity Festival - Bloc Stage</h4>
-          <p class="eventDesc">Shot on Sony AX7II w/ fisheye lens.</p>
-        </div>
-      </div>
-      <div class="rsContent">
-        <img class="rsImg" src="img/landscape/6.jpg" alt="" />
-        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="right" data-speed="200">
-          <h4 class="eventName">Gold Coast Architecture</h4>
-          <p class="eventDesc">Shot on Sony AX7II w/ fisheye lens.</p>
-        </div>
-      </div>
-      <div class="rsContent">
-        <img class="rsImg" src="img/landscape/7.jpg" alt="" />
-        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="right" data-speed="200">
-          <h4 class="eventName">Gold Coast Architecture</h4>
-          <p class="eventDesc">Shot on Sony AX7II w/ fisheye lens.</p>
-        </div>
-      </div>
-      <div class="rsContent">
-        <img class="rsImg" src="img/landscape/8.jpg" alt="" />
-        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="right" data-speed="200">
-          <h4 class="eventName">Gold Coast Architecture</h4>
-          <p class="eventDesc">Shot on Sony AX7II w/ fisheye lens.</p>
-        </div>
-      </div>
-      <div class="rsContent">
-        <img class="rsImg" src="img/landscape/9.jpg" alt="" />
-        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="right" data-speed="200">
-          <h4 class="eventName">Gold Coast Architecture</h4>
-          <p class="eventDesc">Shot on Sony AX7II w/ fisheye lens.</p>
-        </div>
-      </div>
-      <div class="rsContent">
-        <img class="rsImg" src="img/landscape/10.jpg" alt="" />
-        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="right" data-speed="200">
-          <h4 class="eventName">Gold Coast Architecture</h4>
-          <p class="eventDesc">Shot on Sony AX7II w/ fisheye lens.</p>
-        </div>
-      </div>
-      <div class="rsContent">
-        <img class="rsImg" src="img/landscape/11.jpg" alt="" />
-        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="right" data-speed="200">
-          <h4 class="eventName">Gold Coast Architecture</h4>
-          <p class="eventDesc">Shot on Sony AX7II w/ fisheye lens.</p>
-        </div>
-      </div>
-      <div class="rsContent">
-        <img class="rsImg" src="img/landscape/12.jpg" alt="" />
-        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="right" data-speed="200">
-          <h4 class="eventName">Gold Coast Architecture</h4>
-          <p class="eventDesc">Shot on Sony AX7II w/ fisheye lens.</p>
-        </div>
-      </div>
-      <div class="rsContent">
-        <img class="rsImg" src="img/landscape/13.jpg" alt="" />
-        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="right" data-speed="200">
-          <h4 class="eventName">Gold Coast Architecture</h4>
-          <p class="eventDesc">Shot on Sony AX7II w/ fisheye lens.</p>
-        </div>
-      </div>
-      <div class="rsContent">
-        <img class="rsImg" src="img/landscape/14.jpg" alt="" />
-        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="right" data-speed="200">
-          <h4 class="eventName">Gold Coast Architecture</h4>
-          <p class="eventDesc">Shot on Sony AX7II w/ fisheye lens.</p>
-        </div>
-      </div>
-      <!-- slider content end - add more image slides above -->
-    </div>
-  </div>
+      <!-- slider code end - container -->
     <!-- Footer Area content -->
   <div class="w-full px-8 py-4"> 
     <div class="flex flex-col items-center justify-end px-8 py-4 border-t border-solid lg:flex-row border-gray">
       <ul class="flex flex-wrap space-x-5 text-xs">
-          <li class="mb-6 text-center flex-full lg:flex-none lg:mb-0">© 2022 JP-Photography.</li>
+          <li class="mb-6 text-center flex-full lg:flex-none lg:mb-0">© 2022 Jordan Pavey Photography.</li>
+          <li class="lg:ml-6">
+              <a href="#_" class="relative inline-block text-black group">
+                  <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-0"></span>
+                  <span>Terms of service</span>
+              </a>
+          </li>
       </ul>
   </div>
 
@@ -345,35 +252,34 @@
   </div>
   </div>  
   
-    <script id="addJS">jQuery(document).ready(function($) {
-  $('#full-width-slider').royalSlider({
+  <script id="addJS">jQuery(document).ready(function($) {
+    $('#simple-vertical').royalSlider({
     arrowsNav: true,
-    loop: true,
-    keyboardNavEnabled: true,
-    slidesOrientation: 'vertical',
-    controlsInside: false,
-    imageScaleMode: 'cover',
     arrowsNavAutoHide: false,
-    autoScaleSlider: false, 
-    autoScaleSliderWidth: 960,     
-    autoScaleSliderHeight: 350,
-    controlNavigation: 'bullets',
-    thumbsFitInViewport: false,
-    navigateByClick: true,
-    startSlideId: 0,
-    autoPlay: true,
-    transitionType:'move',
-    globalCaption: false,
-    deeplinking: {
-      enabled: true,
-      change: false
-    },
+    fadeinLoadedSlide: true,
+    controlNavigation: 'none',
+    imageScaleMode: 'fill',
+    imageAlignCenter:true,
+    loop: false,
+    loopRewind: false,
+    numImagesToPreload: 4,
+    slidesOrientation: 'vertical',
+    keyboardNavEnabled: true,
+    video: {
+      autoHideArrows:true,
+      autoHideControlNav:true
+    },  
     
-    imgWidth: 1400,
-    imgHeight: 680
-  });
-});
-</script>
+    autoScaleSlider: true, 
+    autoScaleSliderWidth: 960,     
+    autoScaleSliderHeight: 850,
+    
+    /* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
+    imgWidth: 640,
+    imgHeight: 360
+    });
+    });
+    </script>
   
   
   </body>
