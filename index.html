@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 
-    <title> Full Width Slider | RoyalSlider Example</title>
+    <title> Jordan Pavey Photography</title>
 
     <meta content="Jordan Pavey Photography is a gold coast based events and landscape photographper" name="description">
     <meta name="keywords" content="gold coast photography">
@@ -39,6 +39,7 @@
     <style>
       #full-width-slider {
   width: 100%;
+  height: 100vw;
   color: #000;
 }
 .coloredBlock {
@@ -111,7 +112,7 @@
     }
 }
 
-@media screen and (min-width:960px) and (min-height:660px) {
+@media screen and (min-width:960px) {
   .heroSlider .rsOverflow,
   .royalSlider.heroSlider {
       height: 650px !important;
@@ -153,13 +154,13 @@
   </head>
   <body>
   <!-- MAIN CONTAINER for Fullscreen page -->
-  <div class="flex flex-wrap h-screen min-h-full">
+  <div class="flex flex-wrap text-white bg-black h-screen min-h-full">
     <!-- MENU CONTAINER -->
-    <div class="w-full bg-gray-300 w-full lg:w-1/3 md:h-screen md:min-h-full">
+    <div class="px-8 md:px-12 w-full lg:w-1/3 md:h-screen md:min-h-full">
       <header class="h-full">  
-        <div class="flex flex-col justify-around h-full"> 
+        <div class="flex flex-col h-full"> 
           <!-- Main Header Card -->
-          <div class="w-80 px-4 py-8 mt-4">
+          <div class="mt-4">
             <section class="mb-4" style="min-width: 33%; max-width: 160px;">
               <img src="img/favicon.svg" href="#">
             </section>
@@ -216,8 +217,8 @@
             </div>
           </div>
           <!-- Footer Links of Left Menu Card -->
-          <div class="content-end px-4 py-8">
-            <nav class="flex flex-col flex-wrap">
+          <div class="mt-20">
+            <nav class="flex flex-col flex-wrap flex-end">
               <a href="#" class="inline-block px-5 py-3 mb-2 text-xs text-black bg-gray-200 rounded-md hover:bg-indigo-200">Blog</a>
               <a href="#" class="inline-block px-5 py-3 mb-2 text-xs text-black bg-gray-200 rounded-md hover:bg-indigo-200">Services</a>
               <a href="#" class="inline-block px-5 py-3 mb-2 text-xs text-black bg-gray-200 rounded-md hover:bg-indigo-200">Contact</a>
@@ -227,7 +228,7 @@
       </header>
     </div>
     <!-- RIGHT CONTENT CONTAINER -->
-    <div class="flex flex-col justify-around bg-gray-100 w-full lg:w-2/3 md:h-screen md:min-h-full">
+    <div class="flex flex-col w-full lg:w-2/3 md:h-screen md:min-h-full">
       <!-- slider code start - container -->
   <div class="clearfix sliderContainer fullWidth">
     <div id="full-width-slider" class="royalSlider heroSlider rsMinW">
@@ -308,14 +309,18 @@
     arrowsNav: true,
     loop: true,
     keyboardNavEnabled: true,
-    slidesOrientation: 'vertical',
+    slidesOrientation: 'horizontal',
     controlsInside: false,
     imageScaleMode: 'cover',
     arrowsNavAutoHide: false,
-    autoScaleSlider: false, 
+    autoScaleSlider: true, 
     autoScaleSliderWidth: 960,     
     autoScaleSliderHeight: 350,
-    controlNavigation: 'bullets',
+    controlNavigation: 'thumbnails',
+    thumbs: {
+    		spacing: 10,
+    		arrowsAutoHide: true,
+    	},
     thumbsFitInViewport: false,
     navigateByClick: true,
     startSlideId: 0,
